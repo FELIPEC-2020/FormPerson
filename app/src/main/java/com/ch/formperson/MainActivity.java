@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 
 import es.dmoral.toasty.Toasty;
