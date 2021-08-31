@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Person objPerson = new Person(document, name, lastName);
         listPersons.add(objPerson);
         cleanRecords();
-        Toast.makeText(getApplicationContext(),
-                "Toast por defecto", Toast.LENGTH_SHORT);
+        Toasty.success(this, MessageFormat.format("Se ha agregado a {0} {1}", document, name, lastName),
+                Toast.LENGTH_SHORT, true).show();
     }
 
     private void cleanRecords(){
